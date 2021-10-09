@@ -1,6 +1,5 @@
 # Тестовый проект по сервису сокращения ссылок
 ## Запуск
-___
 ```bash
 python3.9 -m venv env
 source env/bin/activate
