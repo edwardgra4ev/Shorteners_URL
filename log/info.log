@@ -1,0 +1,61 @@
+2021-10-09T17:57:46.409747+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO "URL" (uid, url, url_shorter, date_creation, count_requests) VALUES (?, ?, ?, ?, ?)]
+[parameters: (UUID('acd9bc38-91bf-49bc-9e98-58c78762f2a7'), 'http://github.com/edwardgra4ev/Fast_Api_authorization_using_cookies/blob/master/app/personal_area.py', 'asdasd', '2021-10-09 14:57:46.409747', 0)]
+(Background on this error at: https://sqlalche.me/e/14/rvf5)
+2021-10-09T18:15:04.793020+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ 'URL' object is not subscriptable
+2021-10-09T18:28:25.417609+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ print() argument after ** must be a mapping, not URL
+2021-10-09T18:28:34.125582+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ print() argument after * must be an iterable, not URL
+2021-10-09T18:30:42.790700+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ 'URL' object is not iterable
+2021-10-09T18:32:11.350871+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ 'URL' object is not iterable
+2021-10-09T18:32:41.271134+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ 'URL' object has no attribute 'get'
+2021-10-09T18:33:58.342650+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ 'URL' object is not iterable
+2021-10-09T18:43:02.998506+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ Boolean value of this clause is not defined
+2021-10-09T18:43:17.583056+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ Boolean value of this clause is not defined
+2021-10-09T18:44:26.764748+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ 'ChunkedIteratorResult' object has no attribute 'fist'
+2021-10-09T18:45:23.823299+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ type object 'URL' has no attribute 'filter'
+2021-10-09T18:48:08.226874+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ print() argument after ** must be a mapping, not list
+2021-10-09T18:48:29.298866+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ 'URL' object is not subscriptable
+2021-10-09T18:57:04.550894+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ (sqlite3.OperationalError) no such table: URL
+[SQL: SELECT "URL".uid AS "URL_uid", "URL".url AS "URL_url", "URL".url_shorter AS "URL_url_shorter", "URL".date_creation AS "URL_date_creation", "URL".count_requests AS "URL_count_requests" 
+FROM "URL" 
+WHERE "URL".url = ? AND "URL".url_shorter = ?]
+[parameters: ('http://github.com/edwardgra4ev/Fast_Api_authorization_using_cookies/blob/master/app/personal_area.py', 'assadasdd')]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2021-10-09T19:26:53.362780+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ (sqlite3.IntegrityError) UNIQUE constraint failed: URL.url_shorter
+[SQL: INSERT INTO "URL" (uid, url, url_shorter, date_creation, count_requests) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('c6ffc1c4-720d-4872-bebf-d7e767679dc0', 'https://fastapi.tisangolo.com/advanced/custom-response/', '7', '2021-10-09 16:26:53.362780', 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2021-10-09T19:27:59.048600+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ (sqlite3.IntegrityError) UNIQUE constraint failed: URL.url_shorter
+[SQL: INSERT INTO "URL" (uid, url, url_shorter, date_creation, count_requests) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('694226fb-3533-4bd3-a151-3832a8f64350', 'https://fastapi.tisangolo.com/advanced/custom-response/', '7', '2021-10-09 16:27:59.048600', 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2021-10-09T19:28:17.820658+0300 ERROR При добавлении записи в БД URL произошла ошибка:
+ (sqlite3.IntegrityError) UNIQUE constraint failed: URL.url_shorter
+[SQL: INSERT INTO "URL" (uid, url, url_shorter, date_creation, count_requests) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('087c96a4-fc85-4c7d-a5f1-3be1f134a74f', 'https://fastapi.tisangolo.com/advanced/custom-response/', '7', '2021-10-09 16:28:17.820658', 0)]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+2021-10-09T19:32:22.435680+0300 ERROR При поиска записи в БД URL произошла ошибка:
+ (sqlite3.OperationalError) no such table: URL
+[SQL: SELECT "URL".uid AS "URL_uid", "URL".url AS "URL_url", "URL".url_shorter AS "URL_url_shorter", "URL".date_creation AS "URL_date_creation", "URL".count_requests AS "URL_count_requests" 
+FROM "URL" 
+WHERE "URL".url = ? AND "URL".url_shorter = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('https://github.com/edwardgra4ev', 'my_git', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
